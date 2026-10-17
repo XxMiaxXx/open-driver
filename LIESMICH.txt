@@ -1,0 +1,44 @@
+DriverUp – Fertige Website (statischer HTML-Export)
+====================================================
+
+Das ist die KOMPLETTE Website als fertige HTML-Dateien:
+kein Node.js, kein Build, kein Server, keine Fehlerquellen.
+
+WICHTIG BEIM LOKALEN ANSEHEN
+----------------------------
+Die ZIP zuerst KOMPLETT entpacken (Rechtsklick -> "Alle extrahieren")!
+Wer die index.html direkt IN der ZIP doppelklickt, sieht keine
+Animationen, weil der _next-Ordner fehlt.
+Nach dem Entpacken: Doppelklick auf index.html -> alles funktioniert.
+
+ONLINE STELLEN – 3 MÖGLICHKEITEN
+--------------------------------
+
+► OPTION A: GitHub Pages (empfohlen, du hast ja schon GitHub)
+  1. Alle Dateien dieses Ordners in dein Repo hochladen
+     (index.html muss direkt im Repo-Root liegen!)
+  2. Auf GitHub: Settings -> Pages -> Source: "Deploy from a branch",
+     Branch: main, Ordner: / (root) -> Save
+  3. Nach 1-2 Minuten ist deine Seite online unter:
+     https://DEIN-NAME.github.io/REPO-NAME/
+  Die Datei .nojekyll (liegt bei) NICHT löschen – sie sorgt dafür,
+  dass GitHub den _next-Ordner nicht ignoriert!
+
+► OPTION B: Netlify Drop (am schnellsten, 10 Sekunden)
+  1. https://app.netlify.com/drop öffnen (kostenloser Account)
+  2. Diesen GANZEN Ordner auf die Seite ziehen -> fertig.
+
+► OPTION C: Render als STATISCHE Seite (kein Server mehr!)
+  1. Render -> New + -> "Static Site" (NICHT "Web Service"!)
+  2. Repo verbinden
+  3. Build Command: LEER LASSEN
+  4. Publish Directory: .  (nur ein Punkt)
+  5. Deploy -> fertig. Kein Start-Command, kein 502 möglich.
+
+IN ALLEN FÄLLEN GILT
+--------------------
+- Immer der GANZE Ordner (index.html + _next + alle Dateien),
+  nie nur die index.html allein.
+- Der Download-Button verlinkt downloads/DriverUp.exe (liegt bei) –
+  ersetze sie durch deine echte EXE (gebaut mit build_exe.bat).
+- Stand: Version 1.1.0 der App.
